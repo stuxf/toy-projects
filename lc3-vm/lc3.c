@@ -156,7 +156,7 @@ uint16_t mem_read(uint16_t address) {
   return memory[address];
 }
 
-void handle_interrupt(int signal) {
+void handle_interrupt() {
   restore_input_buffering();
   printf("\n");
   exit(-2);
